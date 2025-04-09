@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Shop - Ürün</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 2rem; }
+    .product { max-width: 600px; margin: auto; }
+    img { width: 100%; height: auto; border-radius: 4px; }
+    button { background: green; color: white; padding: 1rem 2rem; border: none; border-radius: 4px; font-size: 1rem; margin-top: 1rem; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <div class="product">
+    <h1>Ürün 1</h1>
+    <img src="https://via.placeholder.com/600x400" alt="Ürün">
+    <p>Bu demo ürün açıklamasıdır. Smartlook izleme için bu sayfada tıklamalar kaydedilir.</p>
+    <button onclick="window.location.href='cart.html'">Sepete Ekle</button>
+  </div>
+  <script type="text/javascript">
+    window.smartlook||(function(d) {
+      var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+      var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+      c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
+    })(document);
+    smartlook('init', 'YOUR_PROJECT_KEY');
+  </script>
+</body>
+</html>

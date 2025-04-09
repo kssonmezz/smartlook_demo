@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Shop - Sipariş</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 2rem; }
+    form { max-width: 400px; margin: auto; display: flex; flex-direction: column; gap: 1rem; }
+    input, button { padding: 1rem; font-size: 1rem; border-radius: 4px; border: 1px solid #ccc; }
+    button { background: purple; color: white; border: none; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>Sipariş Formu</h1>
+  <form onsubmit="event.preventDefault(); window.location.href='thanks.html'">
+    <input type="text" placeholder="Ad Soyad" required>
+    <input type="text" placeholder="Adres" required>
+    <input type="email" placeholder="E-posta" required>
+    <button type="submit">Gönder</button>
+  </form>
+  <script type="text/javascript">
+    window.smartlook||(function(d) {
+      var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+      var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+      c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
+    })(document);
+    smartlook('init', 'YOUR_PROJECT_KEY');
+  </script>
+</body>
+</html>
